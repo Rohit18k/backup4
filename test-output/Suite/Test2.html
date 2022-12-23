@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>TestNG:  Test2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>41/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 25 09:34:37 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>2173 seconds (2173692 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.Addlead.reAssignLeads()'><b>reAssignLeads</b><br>Test class: com.fitsyn.qa.testcases.Addlead</td>
+<td></td>
+<td>52</td>
+<td>com.fitsyn.qa.testcases.Addlead@3bd94634</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo.createApplicationRailTwoAfterPreOfferConfirmationPage()'><b>createApplicationRailTwoAfterPreOfferConfirmationPage</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo</td>
+<td></td>
+<td>127</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo@130f889</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber.textLogs()'><b>textLogs</b><br>Test class: com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber</td>
+<td></td>
+<td>21</td>
+<td>com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber@74294adb</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo.showPreofferAfterpageDropdowmMenu()'><b>showPreofferAfterpageDropdowmMenu</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo</td>
+<td></td>
+<td>15</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo@130f889</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI.subAccountRailTwo()'><b>subAccountRailTwo</b><br>Test class: com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI</td>
+<td></td>
+<td>29</td>
+<td>com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI@3d8314f0</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.DripLogic.editandAddSMSDrip()'><b>editandAddSMSDrip</b><br>Test class: com.fitsyn.qa.testcases.DripLogic</td>
+<td></td>
+<td>76</td>
+<td>com.fitsyn.qa.testcases.DripLogic@f4168b8</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.Addlead.addsecondlead()'><b>addsecondlead</b><br>Test class: com.fitsyn.qa.testcases.Addlead</td>
+<td></td>
+<td>110</td>
+<td>com.fitsyn.qa.testcases.Addlead@3bd94634</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.UploadLeads.uploadLead()'><b>uploadLead</b><br>Test class: com.fitsyn.qa.testcases.UploadLeads</td>
+<td></td>
+<td>42</td>
+<td>com.fitsyn.qa.testcases.UploadLeads@58a90037</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.DripLogic.createDripLogic()'><b>createDripLogic</b><br>Test class: com.fitsyn.qa.testcases.DripLogic</td>
+<td></td>
+<td>60</td>
+<td>com.fitsyn.qa.testcases.DripLogic@f4168b8</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber.applicantDetails()'><b>applicantDetails</b><br>Test class: com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber</td>
+<td></td>
+<td>21</td>
+<td>com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber@74294adb</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI.createCampaignLeadRailTwoPOSTAPI()'><b>createCampaignLeadRailTwoPOSTAPI</b><br>Test class: com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI</td>
+<td></td>
+<td>2</td>
+<td>com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI@3d8314f0</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo.systemSettingPreOfferPageSeconds()'><b>systemSettingPreOfferPageSeconds</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo</td>
+<td></td>
+<td>20</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo@130f889</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne.showPreofferAfterpageDropdowmMenu()'><b>showPreofferAfterpageDropdowmMenu</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne</td>
+<td></td>
+<td>15</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne@70a9f84e</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo.createApplicationRailTwoBeforePreOfferConfirmationPage()'><b>createApplicationRailTwoBeforePreOfferConfirmationPage</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo</td>
+<td></td>
+<td>110</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo@130f889</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.Addlead.addfirstlead()'><b>addfirstlead</b><br>Test class: com.fitsyn.qa.testcases.Addlead</td>
+<td></td>
+<td>106</td>
+<td>com.fitsyn.qa.testcases.Addlead@3bd94634</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne.createApplicationRailOneAfterPreOfferConfirmationPage()'><b>createApplicationRailOneAfterPreOfferConfirmationPage</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne</td>
+<td></td>
+<td>142</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne@70a9f84e</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.CampaignRailOneleadAPI.createCampaignLeadRailOnePOSTAPI()'><b>createCampaignLeadRailOnePOSTAPI</b><br>Test class: com.fitsyn.qa.testcases.CampaignRailOneleadAPI</td>
+<td></td>
+<td>2</td>
+<td>com.fitsyn.qa.testcases.CampaignRailOneleadAPI@2df32bf7</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.UploadLeads.sortColumns()'><b>sortColumns</b><br>Test class: com.fitsyn.qa.testcases.UploadLeads</td>
+<td></td>
+<td>100</td>
+<td>com.fitsyn.qa.testcases.UploadLeads@58a90037</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.SMSTemplate.createSMStemplate()'><b>createSMStemplate</b><br>Test class: com.fitsyn.qa.testcases.SMSTemplate</td>
+<td></td>
+<td>23</td>
+<td>com.fitsyn.qa.testcases.SMSTemplate@530612ba</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.Campaign.uploadLeadsCampaignPage()'><b>uploadLeadsCampaignPage</b><br>Test class: com.fitsyn.qa.testcases.Campaign</td>
+<td></td>
+<td>29</td>
+<td>com.fitsyn.qa.testcases.Campaign@2bea5ab4</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne.createApplicationRailOneBeforePreOfferConfirmationPage()'><b>createApplicationRailOneBeforePreOfferConfirmationPage</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne</td>
+<td></td>
+<td>110</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne@70a9f84e</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne.subaccountSettingRailOne()'><b>subaccountSettingRailOne</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne</td>
+<td></td>
+<td>31</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne@70a9f84e</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber.addComments()'><b>addComments</b><br>Test class: com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber</td>
+<td></td>
+<td>26</td>
+<td>com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber@74294adb</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.DripLogic.startdrip()'><b>startdrip</b><br>Test class: com.fitsyn.qa.testcases.DripLogic</td>
+<td></td>
+<td>84</td>
+<td>com.fitsyn.qa.testcases.DripLogic@f4168b8</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo.subaccountSettingRailTwo()'><b>subaccountSettingRailTwo</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo</td>
+<td></td>
+<td>31</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo@130f889</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber.addTexts()'><b>addTexts</b><br>Test class: com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber</td>
+<td></td>
+<td>25</td>
+<td>com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber@74294adb</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.Campaign.createCampaign()'><b>createCampaign</b><br>Test class: com.fitsyn.qa.testcases.Campaign</td>
+<td></td>
+<td>41</td>
+<td>com.fitsyn.qa.testcases.Campaign@2bea5ab4</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne.showPreofferBeforepageDropdowmMenu()'><b>showPreofferBeforepageDropdowmMenu</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne</td>
+<td></td>
+<td>18</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne@70a9f84e</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo.showPreofferBeforepageDropdowmMenu()'><b>showPreofferBeforepageDropdowmMenu</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo</td>
+<td></td>
+<td>18</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInPreOfferForRialTwo@130f889</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.CampaignRailOneleadAPI.navigateLeadPage()'><b>navigateLeadPage</b><br>Test class: com.fitsyn.qa.testcases.CampaignRailOneleadAPI</td>
+<td></td>
+<td>5</td>
+<td>com.fitsyn.qa.testcases.CampaignRailOneleadAPI@2df32bf7</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.UploadLeads.uplodedFiles()'><b>uplodedFiles</b><br>Test class: com.fitsyn.qa.testcases.UploadLeads</td>
+<td></td>
+<td>20</td>
+<td>com.fitsyn.qa.testcases.UploadLeads@58a90037</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.IVR.createIVR()'><b>createIVR</b><br>Test class: com.fitsyn.qa.testcases.IVR</td>
+<td></td>
+<td>118</td>
+<td>com.fitsyn.qa.testcases.IVR@2a40cd94</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber.composeEmail()'><b>composeEmail</b><br>Test class: com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber</td>
+<td></td>
+<td>70</td>
+<td>com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber@74294adb</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI.navigateLeadPage()'><b>navigateLeadPage</b><br>Test class: com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI</td>
+<td></td>
+<td>8</td>
+<td>com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI@3d8314f0</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.CampaignRailOneleadAPI.subAccountRailOne()'><b>subAccountRailOne</b><br>Test class: com.fitsyn.qa.testcases.CampaignRailOneleadAPI</td>
+<td></td>
+<td>32</td>
+<td>com.fitsyn.qa.testcases.CampaignRailOneleadAPI@2df32bf7</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.Campaign.buyNumbercreateAgentGroup()'><b>buyNumbercreateAgentGroup</b><br>Test class: com.fitsyn.qa.testcases.Campaign</td>
+<td></td>
+<td>16</td>
+<td>com.fitsyn.qa.testcases.Campaign@2bea5ab4</td></tr>
+<tr>
+<td title='com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne.systemSettingPreOfferPageSeconds()'><b>systemSettingPreOfferPageSeconds</b><br>Test class: com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne</td>
+<td></td>
+<td>20</td>
+<td>com.fitsyn.qa.multipletestcases.DelayResultsInpreOfferForRailOne@70a9f84e</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber.searchCampaign()'><b>searchCampaign</b><br>Test class: com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber</td>
+<td></td>
+<td>27</td>
+<td>com.fitsyn.qa.testcases.SendMessageEmailTextToVoiceNumber@74294adb</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI.systemSettingAllowDuplicateLeads()'><b>systemSettingAllowDuplicateLeads</b><br>Test class: com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI</td>
+<td></td>
+<td>17</td>
+<td>com.fitsyn.qa.testcases.CampaignRailtwoLeadAPI@3d8314f0</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.Campaign.createUser()'><b>createUser</b><br>Test class: com.fitsyn.qa.testcases.Campaign</td>
+<td></td>
+<td>58</td>
+<td>com.fitsyn.qa.testcases.Campaign@2bea5ab4</td></tr>
+<tr>
+<td title='com.fitsyn.qa.testcases.Addlead.downloadCSVLeadList()'><b>downloadCSVLeadList</b><br>Test class: com.fitsyn.qa.testcases.Addlead</td>
+<td></td>
+<td>260</td>
+<td>com.fitsyn.qa.testcases.Addlead@3bd94634</td></tr>
+</table><p>
+</body>
+</html>

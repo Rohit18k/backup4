@@ -1,0 +1,132 @@
+package com.degreezen.qa.testcases;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.degreezen.qa.base.TestBase1;
+
+public class HealthcareForm  extends TestBase1{
+
+
+	public HealthcareForm() {
+	super();
+	}
+	
+	@BeforeTest
+	public void openBrowser() throws Exception {
+		initialization1();
+	}
+	
+	  @Test(priority=1)
+	     public void  healthcareForm() throws Exception {
+	         Thread.sleep(5000);
+	         Actions actn= new Actions(driver);
+	       actn.moveToElement(driver.findElement(By.xpath("//a[@class='comman-btn btn-white mt-5']"))).click().build().perform();
+	 	
+			 Thread.sleep(2000);
+	       
+	 driver.findElement(By.xpath("//*[@id=\"level_of_education\"]")).click();
+	       
+	Select slt=new Select(driver.findElement(By.xpath("//*[@id=\"level_of_education\"]")));
+	slt.selectByValue("High School Diploma");
+	
+	Thread.sleep(1000);
+	
+	 driver.findElement(By.xpath("//*[@id=\"academic_level\"]")).click();
+	
+	 Select slt1=new Select( driver.findElement(By.xpath("//*[@id=\"academic_level\"]")));
+		slt1.selectByValue("2006");
+		
+		 Thread.sleep(1000);
+		
+		 driver.findElement(By.xpath("//*[@id=\"degree\"]")).click();
+		
+		 Select slt2=new Select(driver.findElement(By.xpath("//*[@id=\"degree\"]")));
+			slt2.selectByValue("PhD");
+	
+			
+			driver.findElement(By.xpath("//*[@id=\"online2\"]")).click();
+			
+			
+			 Thread.sleep(1000);
+			 
+			 
+			 
+				driver.findElement(By.xpath("//*[@id=\"zip_code\"]")).sendKeys("74235");
+			 
+			 
+		 Thread.sleep(1000);
+		 
+		 
+	       WebDriverWait wait = new WebDriverWait(driver, 5);
+			
+			 WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"healthcare\"]"))); 
+			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element1);
+			
+		 
+			 WebElement element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"healthmanagement\"]"))); 
+			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element2);
+			
+			 
+			 WebElement element7 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"veterinary\"]"))); 
+			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element7);
+			 
+			 
+			 WebElement element4 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"respiratory\"]"))); 
+			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element4);
+			 
+			 
+		 
+			 WebElement element3 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Get Started']"))); 
+			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element3);
+			 
+	
+		      Thread.sleep(1000);
+			
+		 driver.findElement(By.xpath("//*[@id=\"start3\"]")).click();
+
+		 
+		 driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("Test");
+		 
+		 
+	
+		 driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("jiyan");
+		 
+		 Thread.sleep(1000);
+
+		 
+			 driver.findElement(By.xpath("//*[@id=\"address\"]")).sendKeys("600 E. NORTHERN LIGHTS BLVD. #E");
+			
+			 
+			
+					 
+					 driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("jiyan@gmail.com");
+				
+				 Thread.sleep(1000);
+				 
+
+						
+		 driver.findElement(By.xpath("//input[@id='phone_number']")).sendKeys("9634562478");
+
+			
+			
+			
+			 WebElement element5 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"security_number_check\"]"))); 
+			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element5);
+			
+			
+	   
+WebElement elt=driver.findElement(By.xpath("//input[@value='Get Info']"));
+
+((JavascriptExecutor)driver).executeScript("arguments[0].click();", elt);
+
+}}
+
+
